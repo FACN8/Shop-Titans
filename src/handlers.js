@@ -11,7 +11,7 @@ const serverError = (err, response) => {
 };
 
 const homeHandler = response => {
-  const filepath = path.join(__dirname, "..", "public", "index.html");
+  const filepath = path.join(__dirname, "..", "public","cartPage", "cart.html");
   readFile(filepath, (err, file) => {
     if (err) return serverError(err, response);
     response.writeHead(200, { "Content-Type": "text/html" });
