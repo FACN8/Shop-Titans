@@ -7,8 +7,8 @@ const getData = cb => {
       cb(null, res.rows);
   });
 };
-const postData = (iteam_name,item_price,cb) => {
-    dbConnection.query("insert into shop(item_name,item_price) values ($1,$2)",[iteam_name,item_price]
+const postData = (item_name,item_price,price_currency,cb) => {
+    dbConnection.query("insert into shop(item_name,item_price,price_currency) values ($1,$2,$3)",[item_name,item_price,price_currency]
     , (err, res) => {
         if (err) return cb(err);
           console.log('res.rows: ' + res.rows);

@@ -27,6 +27,10 @@ function updateDom(err, data) {
         itemPrice.innerHTML = item.item_price;
         row.appendChild(itemPrice);
         table.appendChild(row);
+        var priceCurrency = document.createElement('td');
+        priceCurrency.innerHTML = item.price_currency;
+        row.appendChild(priceCurrency);
+        table.appendChild(row);
       });
     }
   }

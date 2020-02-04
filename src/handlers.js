@@ -56,7 +56,7 @@ const sellInfoHandler = (request,response) => {
          //send to postData the sellInfo (itemName,itemPrice) for the item
       let sellInfo =querystring.parse(body);
         console.log(querystring.parse(body));
-        postData(sellInfo.iteam_name,sellInfo.iteam_price,(err, res) => {
+        postData(sellInfo.item_name,sellInfo.item_price,sellInfo.currency,(err, res) => {
           if (err) return console.log(err); 
           let dynamicData = JSON.stringify(res);
           response.writeHead(301,{location : '/'})
