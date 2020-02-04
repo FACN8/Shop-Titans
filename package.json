@@ -6,8 +6,6 @@
   "dependencies": {
     "dotenv": "^8.2.0",
     "pg": "^7.18.1",
-    "requier": "0.0.1",
-    "static": "^2.0.0",
     "tap-spec": "^5.0.0",
     "tape": "^4.13.0"
   },
