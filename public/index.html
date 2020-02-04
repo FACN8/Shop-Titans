@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Shop Titans , Buy and Sell</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="public/main.css">
+</head>
+
+<body>
+  
+    <form class="form" action="/sell_shop" method="post">
+        <input type="text" name="iteam_name" value="" placeholder="enter item name">
+        <input type="text" name="iteam_price" value="" placeholder="enter item price">
+        <button type="submit" name="sell">+ sell item</button>
+    </form>
+    <div class="table-container">
+        <table id="items-table">
+            <tr>
+                <th>item Name</th>
+                <th>item Price</th>
+            </tr>
+        </table>
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type="text/javascript" src="./public/app.js"></script>
+</body>
+</html>

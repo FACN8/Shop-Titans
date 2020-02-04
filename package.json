@@ -1,0 +1,34 @@
+{
+  "name": "shop-titans",
+  "version": "1.0.0",
+  "description": "In Shop Titans you will experience the buyer and the seller perspective",
+  "main": "index.js",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "pg": "^7.18.1",
+    "requier": "0.0.1",
+    "static": "^2.0.0",
+    "tap-spec": "^5.0.0",
+    "tape": "^4.13.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "nodemon": "^2.0.2"
+  },
+  "scripts": {
+    "autostart": "nodemon src/server.js",
+    "start": "node src/server.js",
+    "lint": "eslint .",
+    "Test": "nodemon src/server.test.js | tap-spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FACN8/Shop-Titans.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FACN8/Shop-Titans/issues"
+  },
+  "homepage": "https://github.com/FACN8/Shop-Titans#readme"
+}
