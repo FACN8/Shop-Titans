@@ -1,3 +1,48 @@
+
+.table-container{
+    background-color: #F6F7F8;
+    border: 1px solid #D6D9DC;
+    border-radius: 3px;
+    width: 70%;
+    padding: 50px;
+    margin: 0 0 40px 0;
+    display: flex;
+    justify-content: center;
+}
+#items-table{
+    margin-bottom: 40px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 40px;
+}
+tr,th,td{
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+}
+th{
+    border: 3px dotted #D6D9DC;
+border-radius: 20px;
+}
+td{
+    border: 1px solid #D6D9DC;
+    border-radius: 5px;
+}
+button{
+    border: 1px solid #D6D9DC;
+    font-size: 30px;
+    cursor: pointer;
+    transition: 0.4s;
+    color: #fff;
+    background-color: #407FC7;
+    text-transform: uppercase;
+    text-align: center;
+    vertical-align: middle;
+    padding: .375rem .75rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+}
+
 @media only screen and (max-width: 700px) {
     .photo1 {
         height: 100px;
@@ -12,6 +57,22 @@
     .submit {
         width: 100px;
         height: 30px;
+    }
+     button{
+        font-size: 10px;
+    }
+      img{
+        height: 100px;
+    }
+    
+    .table-container{
+        width: 92%;
+
+    }
+    tr,th,td{
+        padding: 1px;
+        text-align: center;
+        font-size: 18px;
     }
 }
 body{
