@@ -1,101 +1,122 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    color: #5D6063;
+
+body {
+  color: #5D6063;
   background-color: #EAEDF0;
   font-family: "Helvetica", "Arial", sans-serif;
   font-size: 16px;
   line-height: 1.3;
-
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.photoshop{
-    max-width: 100vw;
-    text-align: center;
+
+.photoshop {
+  max-width: 100vw;
+  text-align: center;
 }
-img{
-    margin-top: 5px;
-    height: 250px;
+
+img {
+  margin-top: 5px;
+  height: 250px;
 }
-.form{
-    background-color: #F6F7F8;
-    border: 1px solid #D6D9DC;
-    border-radius: 3px;
-    width: 80%;
-    padding: 50px;
-    margin: 0 0 40px 0;
+
+.form {
+  background-color: #F6F7F8;
+  border: 1px solid #D6D9DC;
+  border-radius: 3px;
+  width: 80%;
+  padding: 50px;
+  margin: 0 0 40px 0;
 }
+
 .sell_continar {
-    margin-bottom: 40px;
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
-  .price_continar{
-    display: flex;
-    flex-direction: row;
-  }
-  
-  .sell_continar input[type='text'] {
-    background-color: #FFFFFF;
-    border: 1px solid #D6D9DC;
-    border-radius: 3px;
-    width: 100%;
-    padding: 7px;
-    font-size: 45px;
-  }
-  
-  .sell_continar label {
-    margin-bottom: 15px;
-    font-size: 65px;
-  }
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
 
-  .sell_continar select {
-    width: 100%;
-    padding: 5px; 
-    font-size: 45px;     
-  }
+.price_continar {
+  display: flex;
+  flex-direction: row;
+}
 
-  .sell_continar  button {
-    font-size: 60px;
-    font-weight: bold;
-  
-    color: #FFFFFF;
-    background-color: #5995DA;
-  
-    border: none;
-    border-radius: 3px;
-  
-    padding: 10px 40px;
-    cursor: pointer;
-  }
-  
-  .sell_continar button:hover {
-    background-color: #76AEED;
-  }
-  
-  .sell_continar  button:active {
-    background-color: #407FC7;
-  }
+.sell_continar input[type='text'] {
+  background-color: #FFFFFF;
+  border: 1px solid #D6D9DC;
+  border-radius: 3px;
+  width: 100%;
+  padding: 7px;
+  font-size: 45px;
+}
+
+.sell_continar label {
+  margin-bottom: 15px;
+  font-size: 65px;
+}
+
+.sell_continar select {
+  width: 100%;
+  padding: 5px;
+  font-size: 45px;
+}
+
+.sell_continar button {
+  font-size: 60px;
+  font-weight: bold;
+  color: #FFFFFF;
+  background-color: #5995DA;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 40px;
+  cursor: pointer;
+}
+
+.sell_continar button:hover {
+  background-color: #76AEED;
+}
+
+.sell_continar button:active {
+  background-color: #407FC7;
+}
+
+.icon-container {
+  width: 80%;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.icon-item {
+  border-radius: 50%;
+  padding: 15px;
+  height: 100px;
+  width: 100px;
+}
+
+.icon-item:hover {
+  background-color: #D6D9DC;
+}
+
 
 @media only screen and (max-width: 700px) {
-    .sell_continar label,.sell_continar  button  {
-        font-size: 25px;
-      }
-    .sell_continar select, .sell_continar input[type='text'] {
-        font-size: 12px;     
-      }  
-    .price_continar{
-        display: flex;
-        flex-direction: column;
-      }
-      img{
-        height: 100px;
-    }
+  .sell_continar label, .sell_continar button {
+    font-size: 25px;
   }
+  .sell_continar select, .sell_continar input[type='text'] {
+    font-size: 15px;
+  }
+  .price_continar {
+    display: flex;
+    flex-direction: column;
+  }
+  img {
+    height: 100px;
+  }
+  
+}
