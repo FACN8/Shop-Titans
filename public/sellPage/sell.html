@@ -5,34 +5,36 @@
     <meta charset="utf-8">
     <title>Shop Titans , Buy and Sell</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./public/sellPage/sellStyle.css">
+    <link rel="stylesheet" href="./sellStyle.css">
 </head>
 
 <body>
-  
+    <div class="photoshop">
+        <img src="../res/logoPic.png">
+    </div>
     <form class="form" action="/sell_shop" method="post" autocomplete="off">
         <div class="sell_continar">
             <label>Item Name: </label>
-        <input type="text" name="item_name" value="" placeholder="enter item name">
-    </div>
-    <div class="sell_continar">
-        <label>Item Price: </label>
-        <div class="price_continar">
-        <input type="text" name="item_price" value="" placeholder="enter item price"> 
-        <select name='currency'>
-            <option value="$">dollar $</option>
-            <option value="€">euro €</option>
-            <option value="₪">shekel ₪</option>
-            <option value="₺">lira ₺</option>
-          </select>
+            <input type="text" name="item_name" value="" placeholder="enter item name">
         </div>
-    </div>
-
+        <div class="sell_continar">
+            <label>Item Price: </label>
+            <div class="price_continar">
+                <input type="text" name="item_price" value="" placeholder="enter item price">
+                <select name='currency'>
+                    <option value="$">dollar $</option>
+                    <option value="€">euro €</option>
+                    <option value="₪">shekel ₪</option>
+                    <option value="₺">lira ₺</option>
+                </select>
+            </div>
+        </div>
         <div class="sell_continar ">
-        <button type="submit" name="sell">+ sell item</button>
-    </div>
+            <button type="submit" name="sell">+ sell item</button>
+        </div>
     </form>
 
-    <script type="text/javascript" src="./public/sellPage/sellScript.js"></script>
+    <script type="text/javascript" src="./sellScript.js"></script>
 </body>
+
 </html>
