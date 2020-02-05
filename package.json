@@ -6,6 +6,7 @@
   "dependencies": {
     "dotenv": "^8.2.0",
     "pg": "^7.18.1",
+    "supertest": "^4.0.2",
     "tap-spec": "^5.0.0",
     "tape": "^4.13.0"
   },
@@ -17,7 +18,8 @@
     "autostart": "nodemon src/server.js",
     "start": "node src/server.js",
     "lint": "eslint .",
-    "Test": "nodemon src/server.test.js | tap-spec"
+    "db_test": "set NODE_ENV=test&& nodemon tests/db_tests.js",
+    "routers_test": "nodemon tests/routers_test.js"
   },
   "repository": {
     "type": "git",
