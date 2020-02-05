@@ -3,11 +3,10 @@ const url = require("url");
 require("dotenv").config();
 
 let DB_URL = process.env.DATABASE_URL;
-console.log(process.env.NODE_ENV)
+
 if (process.env.NODE_ENV === "test") {
-  console.log('fgfgfg',process.env.NODE_ENV)
   DB_URL = process.env.TEST_DB_URL;
-}else{DB_URL = process.env.DATABASE_URL;console.log('not test')}
+}
 
 if (!DB_URL) throw new Error("Enviroment variable DATABASE_URL must be set");
 
@@ -28,5 +27,5 @@ if (password) {
 }
 
 options.ssl = options.host !== "localhost";
-console.log(DB_URL)
+
 module.exports = new Pool(options);

@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./public/cartPage/cartStyle.css">
+
     <title>Cart Page</title>
 </head>
 <body>
@@ -14,7 +16,15 @@
         <div class="photoPayPal">
             <img src="https://thelittlefoxfoundation.org/wp-content/uploads/2018/10/payment-options-ice-dam-guys-top-rated-ice-dam-removal-for-paypal-credit-card-png.png">
         </div>
-
+        <div class="table-container">
+            <table id="items-table">
+                <tr>
+                    <th>item Name</th>
+                    <th>item Price</th>
+                    <th>Price currency</th>
+                </tr>
+            </table>
+        </div>
         <div class="form">
         <form action="/ ">
             Card Holser's Name:
@@ -25,5 +35,7 @@
             <input type="text" name="Card Number" value=" ">
 
             </div>
+            <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+            <script type="text/javascript" src="./public/cartPage/cartScript.js"></script>
 </body>
 </html>
