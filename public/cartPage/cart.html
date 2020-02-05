@@ -4,26 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./cartStyle.css">
     <title>Cart Page</title>
 </head>
 <body>
     <div class="photoshop">
-        <img src="https://lh3.googleusercontent.com/proxy/-S86KmLSCDkqJ38WFN5ylqYHl9PWpPQ47KRi5DbcXqNjZcrwKthV1PwkqnE2ntwcct8QFr-XYKWW4x2ebezaL__z4IF48d7kOJq2twcMCIgXkkFqPwQdV9EuFNQwG56dUg">
-        </div>
-
+        <img class="photo1"
+            src="../res/logoPic.png">
+    </div>
+    <div class="form">
+        
         <div class="photoPayPal">
-            <img src="https://thelittlefoxfoundation.org/wp-content/uploads/2018/10/payment-options-ice-dam-guys-top-rated-ice-dam-removal-for-paypal-credit-card-png.png">
+            <img class="photo2"
+                src="../res/paypal.png">
         </div>
-
-        <div class="form">
         <form action="/ ">
-            Card Holser's Name:
-            <input type="text" name="Card Holser's Name" value=" ">
-
+                Card Holser's Name
+                <input class="style" type="text" name="Card Holser's Name" value=" ">
             <br>
-            Card Number:
-            <input type="text" name="Card Number" value=" ">
+                Card Number
+                <input class="style" type="text" name="Card Number" value=" ">
+            <br>
+                Expire Date
+                <input class="style" type="date" name="bday">
+                <br>
+                CVC
+                <input class="style" type="text" name="CVC" value=" ">
+            <br>
+                Amount of money 
+                <input class="style" type="text" name=" Amount of money" value=" ">
+            <br>
+            <button class="submit" type="submit" name="purchase">purchase</button>
+        </form>
+    </div>
 
-            </div>
 </body>
+
 </html>
