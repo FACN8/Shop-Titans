@@ -1,6 +1,5 @@
 
 function loadItems(url, cb) {
-    console.log('inside load')
   axios
     .get(url)
     .then(result => {
@@ -44,3 +43,4 @@ function updateDom(err, data) {
   
   loadItems('/buy_shop', updateDom);
   
+  module.exports = loadItems;

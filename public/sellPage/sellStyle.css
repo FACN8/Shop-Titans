@@ -89,7 +89,7 @@ img{
         font-size: 25px;
       }
     .sell_continar select, .sell_continar input[type='text'] {
-        font-size: 15px;     
+        font-size: 12px;     
       }  
     .price_continar{
         display: flex;
