@@ -31,6 +31,13 @@ function updateDom(err, data) {
         priceCurrency.innerHTML = item.price_currency;
         row.appendChild(priceCurrency);
         table.appendChild(row);
+        var addToCart = document.createElement('button');
+        addToCart.innerHTML = 'add To Cart';
+        addToCart.addEventListener('click',(event)=>{
+          console.log({item_name:item.item_name,item_price:item.item_price,price_currency:item.price_currency})
+        })
+        row.appendChild(addToCart);
+        table.appendChild(row);
       });
     }
   }

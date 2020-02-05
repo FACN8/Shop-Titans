@@ -11,7 +11,7 @@ const serverError = (err, response) => {
 };
 
 const homeHandler = response => {
-  const filepath = path.join(__dirname, "..", "public","cartPage", "cart.html");
+  const filepath = path.join(__dirname, "..", "public", "homePage","home.html");
   readFile(filepath, (err, file) => {
     if (err) return serverError(err, response);
     response.writeHead(200, { "Content-Type": "text/html" });
@@ -28,7 +28,8 @@ const publicHandler = (url, response) => {
         html: "text/html",
         css: "text/css",
         js: "application/javascript",
-        ico: "image/x-icon"
+        ico: "image/x-icon",
+        png: "image/png"
       };
       response.writeHead(200, { "content-type": extensionType[extension] });
       response.end(file);

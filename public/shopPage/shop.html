@@ -5,31 +5,24 @@
     <meta charset="utf-8">
     <title>Shop Titans , Buy and Sell</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./public/shopPage/shopStyle.css">
+    <link rel="stylesheet" href="./shopStyle.css">
 </head>
 
 <body>
-  
-    <form class="form" action="/sell_shop" method="post" autocomplete="off">
-        <input type="text" name="item_name" value="" placeholder="enter item name">
-        <input type="text" name="item_price" value="" placeholder="enter item price">
-        <select name='currency'>
-            <option value="$">dollar $</option>
-            <option value="€">euro €</option>
-            <option value="₪">shekel ₪</option>
-            <option value="₺">lira ₺</option>
-          </select>
-        <button type="submit" name="sell">+ sell item</button>
-    </form>
+    <div class="photoshop">
+        <img src="../res/logoPic.png">
+    </div>
     <div class="table-container">
         <table id="items-table">
             <tr>
                 <th>item Name</th>
                 <th>item Price</th>
+                <th>Price currency</th>
             </tr>
         </table>
     </div>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script type="text/javascript" src="shopScript.js"></script>
+    <script type="text/javascript" src="./shopScript.js"></script>
 </body>
+
 </html>
