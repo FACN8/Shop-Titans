@@ -13,7 +13,8 @@ const {
       homeHandler(response);
     } else if (url === '/buy_shop') {
       buyInfoHandler(response);
-    } else if (url === '/sell_shop') {
+    }
+     else if (url === '/sell_shop') {
       sellInfoHandler(request,response);
     } else if (url.includes('public')) {
       publicHandler(url, response);
