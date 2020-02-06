@@ -29,10 +29,8 @@ body {
     padding: 15px;
     height: 100px;
     width: 100px;
-
-.table-container{
-    background-color: #F6F7F8;
-    border: 1px solid #D6D9DC;
+}
+.table-container{ 
     border-radius: 3px;
     width: 70%;
     padding: 50px;
@@ -69,9 +67,11 @@ button{
     text-transform: uppercase;
     text-align: center;
     vertical-align: middle;
-    padding: .375rem .75rem;
     line-height: 1.5;
     border-radius: .25rem;
+}
+.purchase{
+    text-align: center;
 }
 
 @media only screen and (max-width: 700px) {
@@ -155,19 +155,13 @@ button{
     img {
         height: 100px;
     }
-    .form {
-}
-    .photoPayPal {
-
-    }
     .photo2 {
-        height: 50px;
-    }
-    .style {
-      
-
+        height: 80px;
     }
     .submit {
         font-size: 15px;
+    }
+    .container {
+        width: 90%;
     }
 }
